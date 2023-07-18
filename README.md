@@ -7,6 +7,6 @@
 #### User/authentication module
 - Should have an API to register the user and login into the application.
 #### Chat module
--Only authenticated users are allowed to access this endpoint.
--Should be real-time ( Websockets )
--Should have an API to create/list the messages of the authenticated users.
+- Only authenticated users are allowed to access this endpoint.
+- Should be real-time ( Websockets )
+- Should have an API to create/list the messages of the authenticated users.
