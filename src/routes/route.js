@@ -123,7 +123,7 @@ router.post('/messages',midd.authenticateUser, async function(req,res){
 // Get all messages
 router.get('/messages', midd.authenticateUser, async function(req, res){
     try {
-      const messages = await messageModel.find().populate('user');
+      const messages = await messageModel.find().populate('user').sort({dateTime:1})
       res.json({ messages });
     } catch (error) {
       res.status(500).json({ error: 'An error occurred' });
